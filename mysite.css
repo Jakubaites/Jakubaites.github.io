@@ -1,0 +1,289 @@
+﻿body { 
+    background-color:#c5c6c9;
+    font-family: sans-serif;
+}
+ 
+header{
+    background-color:#fff;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px; 
+    border-bottom: 1px inset black; 
+    z-index: 2;  
+}
+#logo {
+    position:fixed;
+    top: 5px;
+    left: 10px;
+}
+
+#dark {
+    position:fixed;
+    top:37px;
+    right:20px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+p#dark a:link, p#dark a:visited {
+      color: black;
+      font-weight: bold;
+      font-family: serif;
+      text-decoration: none; 
+}
+
+#start {
+       position: absolute;
+       top: 90px;
+       left: 0px;
+       right: 0px; 
+       z-index: 0;
+       margin-left: auto;
+       margin-right: auto;
+} 
+
+
+nav ul {
+     margin: 0px;
+     list-style-type:none;
+     position:fixed;
+     top: 67px;
+     left: 110px;
+     padding:  7px 10px 3px 10px;
+}   
+
+nav ul li {
+     color: #000;
+     display: inline;
+     padding: 5px 10px 5px 10px;
+     
+} 
+
+nav ul li a:link, nav ul li a:visited {
+      color: black;
+      font-weight: bold;
+      font-family: serif; 
+      borded-bottom: none;
+      text-decoration: none; 
+}
+
+nav ul li a:hover, p#dark a:hover {
+      color: #2891a6;
+}
+
+nav ul li.selected {
+      background-color: #c5c6c9;
+      border: 1px inset black;
+}
+
+
+
+div#tableContainer {
+        display: table;
+        border-spacing: 30px;
+        margin-top: 710px; 
+        margin-left: auto;
+        margin-right:auto;
+}
+
+#tableContainer a:hover {
+        color:#fff;
+}
+       
+
+div#tableRow1 {
+        display:table-row;
+}
+
+div#tableRow2 {
+       display:table-row;
+}
+
+div#tableRow3 {
+       display: table-row;
+}
+
+.cell {
+       display: table-cell;
+       text-align: center;
+       
+}
+.cell a:link, .cell a:visited {
+       color: black;
+       font-weight: bold; 
+       borded-bottom: none;
+       text-decoration: none;
+}
+
+footer {
+     text-align: center;
+     margin: 10px 10px 0px 10px
+     font-size: 80%;
+     font-style: italic;
+     clear: right;
+}
+
+.moto {
+      border-radius: 15px;
+      border-style: inset;
+      border-color: #c5c6c9;
+}    
+
+#about {
+      margin: 120px 20px 20px 20px;
+      line-height: 120%;
+} 
+
+div#abouttable {
+        display: table;
+               
+}
+div#aboutrow {
+      display:table-row;
+}
+
+.aboutmoto {
+      display: table-cell;
+      vertical-align: top;
+      border-radius: 15px;
+      border-style: inset;
+      border-color: #c5c6c9;  
+}
+.aboutcell {
+      display: table-cell;
+      vertical-align: top;
+      padding: 10px 10px 10px 0px;
+}
+
+span.abouttitle {
+      font-size: 120%;
+      font-weight: bold;
+}
+
+#history {
+      margin: 120px 20px 20px 20px;
+      line-height: 120%;
+}
+
+.historymoto {
+      float: right;
+      text-align: center;
+      padding: 10px;
+}
+
+.historyimages {
+      border-radius: 15px;
+      border-style: inset;
+      border-color: #c5c6c9;    
+}
+
+#historydaymler {
+        float: left;
+        text-align: center;
+        padding: 10px;
+} 
+span.historytitle {
+        font-size: 120%;
+        font-weight: bold;
+}
+span.historycom {
+        color: black;
+       font-weight: bold; 
+       borded-bottom: none;
+       text-decoration: none;
+}
+#new {
+       margin: 120px 20px 20px 20px;
+       line-height: 120%;
+       display: table;
+       width: 900px;
+       margin-left:  auto;
+       margin-right: auto;          
+}
+
+.tablerownew {
+       display:table-row; 
+}
+
+.newimages {
+      float:left;
+      padding: 10px;
+      border-radius: 15px;
+      border-style: groove;
+      border-color: #c5c6c9;
+      margin: 15px;
+}
+
+.newcell {
+       display: table-cell;
+       border-bottom: 1px solid #fff;
+       vertical-align: top;
+}
+
+.newcell a:link, .newcell a:visited {
+       color: black;
+       font-weight: bold; 
+       borded-bottom: none;
+       text-decoration: none;
+}
+
+.newcell a:hover {
+       color: #fff;
+}
+
+#hondamain {
+       margin: 120px 20px 20px 20px;
+       line-height: 120%;
+       width: 1000px;
+       margin-left: auto;
+       margin-right: auto;
+       clear: right;
+}
+
+.hondah2 {
+       text-align:center;
+       font-size: 120%;
+}
+
+.hondaimages {
+      padding: 10px;
+      border-radius: 15px;
+      border-style: groove;
+      border-color: #c5c6c9;
+      margin: 15px 100px 15px 100px;  
+} 
+
+table {
+      caption-side: top; 
+      border-spacing: 10px 30px; 
+      border-collapse: collapse;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+td, th {
+     border : thin solid gray;
+     padding: 10px;
+}
+
+caption  {
+     font-size: 140%;
+     font-weight: bold;
+     padding-bottom: 10px;
+}
+
+.tableleft {
+     text-align: left;
+}
+
+.companylogo {
+      float:right;
+}
+#hondatext {
+      clear: right;
+}
