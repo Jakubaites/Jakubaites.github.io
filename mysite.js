@@ -29,7 +29,7 @@ function setName() {
          } 
          
          let name = localStorage.getItem("name");
-         phrase.innerHTML = "Приветствую Вас, " + name + ", на моем первом личном сайте";
+         phrase.innerHTML = `Приветствую Вас,${name}, на моем первом личном сайте`;
          if(name == "null" || name =="") {
          phrase.innerHTML = "Приветствую Вас на моем первом личном сайте";
          }
