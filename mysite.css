@@ -22,6 +22,53 @@ header{
     left: 10px;
 }
 
+#location {
+    position: fixed;
+    top: 25px;
+    right:20px;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;   
+}
+
+#location:hover {
+    color: #2891a6;
+}
+
+#geolocation {
+    position: absolute;
+    top: 120px;
+}
+
+#locationText {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 100%;
+}
+
+#formloc {
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    width: 100%;
+}
+
+#map {
+    margin: 5px;
+
+    width: 500px;
+	
+    height: 500px;
+	
+    border: 1px solid black;
+
+
+
+
+
+}
+
 #dark {
     position:fixed;
     top:37px;
