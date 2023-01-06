@@ -106,7 +106,8 @@ function buttonClick(position) {
      if(isNaN(coordPurp.latitude) ||  isNaN(coordPurp.longitude) || 
               coordPurp.latitude == '' || coordPurp.longitude == '') {
         alert('Введите числовые координаты');
-     } else if ( coordPurp.latitude < -90 || coordPurp.latitude > 90 || coordPurp.longitude < -180                  || coordPurp.longitude > 180) {
+     } else if ( coordPurp.latitude < -90 || coordPurp.latitude > 90 || coordPurp.longitude < -180                  
+                || coordPurp.longitude > 180) {
         alert('Введите значения для широты от -90 до 90, для долготы от -180 до 180');
      } else { 
      let result = document.getElementById('result');
