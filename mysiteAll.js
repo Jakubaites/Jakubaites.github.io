@@ -1,7 +1,7 @@
 ﻿window.onload = init;
 
 function init() {
-       showVideo(); 
+      // showVideo(); 
        setName();  
        /*getMyLocation();*/ 
        navbar();
@@ -23,7 +23,7 @@ function navbar() {
       
 };
 
-function showVideo() {
+/*function showVideo() {
       let video = document.getElementById("video");
       video.src = "video/startvideo.mp4";
       video.load(); 
@@ -33,7 +33,7 @@ function showVideo() {
         alert(video.error.code);
       }
 };
-
+*/
 function setName() {      
         let phrase = document.getElementById("starttext");
         phrase.innerHTML = "Приветствую Вас на моем первом личном сайте";
