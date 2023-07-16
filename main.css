@@ -1,0 +1,23 @@
+@import url(./scss/normalize.css);
+@import url(./scss/header.css);
+@import url(./scss/course.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Source+Sans+3:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Source+Sans+3:wght@200;300;400&display=swap");
+@import url(./scss/teacher.css);
+@import url(./scss/reviews.css);
+@import url(./scss/footer.css);
+body {
+  background-color: #DDE2E5;
+  font-family: 'Inter', sans-serif;
+  font-size: medium;
+  line-height: 1.5;
+  font-weight: 500;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body[data-open] {
+  overflow: hidden; }
+
+h2 {
+  text-align: center; }

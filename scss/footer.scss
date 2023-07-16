@@ -1,0 +1,16 @@
+footer {
+    margin-top: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 2;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+@media (min-width: 992px) {
+    footer {
+      font-size: x-large;
+    }
+}

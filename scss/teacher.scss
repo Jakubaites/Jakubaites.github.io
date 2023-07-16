@@ -1,0 +1,66 @@
+.about {
+    margin-top: 10px;
+}
+.teacher {
+    box-sizing: border-box;
+    min-height: 250px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    &__text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__certificate {
+        width: 40%;
+        position:relative;
+        
+    }
+    &__carousel {
+        overflow: hidden;
+        height: 100%;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+    }
+    &__arrow {
+        position: absolute;
+        bottom: calc(50% - 5px);
+        z-index: 2;
+    }
+    &__arrow_left {
+        left: 10px;
+        transform: rotate(90deg);
+    }
+    &__arrow_right {
+        right: 10px;
+        transform: rotate(-90deg);
+    }
+    &__inner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: all 300ms ease;
+    }
+    &__slide {
+        min-width: 100%;
+        height: 100%;
+    }
+    
+}
+@media (min-width: 576px) {
+    .teacher {
+        font-size: large;
+    }
+}
+@media (min-width: 992px) {
+    .teacher {
+        font-size:x-large;
+    }
+}

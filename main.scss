@@ -1,0 +1,23 @@
+@import './scss/normalize.css';
+@import './scss/header.css';
+@import './scss/course.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&family=Source+Sans+3:wght@200;300;400&display=swap'); //шрифт Roboto
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Source+Sans+3:wght@200;300;400&display=swap'); // Inter
+@import './scss/teacher.css';
+@import './scss/reviews.css';
+@import './scss/footer.css';
+body {
+    background-color: #DDE2E5;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+}
+body[data-open] {
+    overflow: hidden;
+}
+h2 {
+    text-align: center;
+}
