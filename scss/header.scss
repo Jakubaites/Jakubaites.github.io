@@ -2,20 +2,17 @@
     box-sizing: border-box;
     min-height: 400px;
     width: 100%;
-    background-image: url(../image/header2.avif);
+    background-image: url(../image/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     padding: 0 10px;
+    color:  #DDE2E5;   
     &__flexbox {
-        padding-top: 40px;
-        width: 100%;
+        padding-top: 5vh; 
+        width: 70%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
     
@@ -40,10 +37,15 @@
         font-size: x-large;
         gap: 40px;
     }
+    &__item {
+        border: none;
+        background: none;
+    }
     &__link {
         text-decoration: none;
         color: #000;
         font-weight: 600;
+        font-size: x-large;
         &:hover {
             color: #4263EB;
         }
@@ -83,6 +85,9 @@
         width: 100%;
         height: 30px;
         top: 10px;
+        font-size: large;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px;
         &__list {
             display:flex;
             flex-direction: row;
@@ -90,19 +95,53 @@
             align-items: center;
             width: 100%;
             gap: 0;
-            font-size: xx-large;
-            font-weight: bold;
+            
+        }
+        &__item {
+            border-radius: 10px;
+            padding: 2px 15px;
+            cursor: pointer;
+            //border: 1px solid #ffffff;
+            //background: rgba(0, 0, 0, 0);
+            //backdrop-filter: blur(8px);
+            :hover {
+                color: #000; 
+            }
         }
         &__link {
-            font-size: large;
-        }
-        &__item_up {
-            display:none;
+            font-size: medium;
+            color: #DDE2E5;
+            position: relative;
+            &:after {
+                display: block;
+	            position: absolute;
+	            left: 0; 
+	            width: 0;
+	            height: 2px; 
+	            background-color: #000; 
+	            content: "";
+	            transition: width 0.3s ease-out;
+            }
+            &:hover:after, &:focus:after {
+                width: 100%;
+            }
         }
     }
 }
 @media (min-width: 992px) {
     .header {
       font-size: x-large;
+      min-height: 500px;
+      &__flexbox {
+        padding-top: 7vh;
+       }
+    }
+    .nav {
+        &__link {
+          font-size: large;
+        }
+        &__item {
+            padding: 2px 30px;
+        }
     }
 }

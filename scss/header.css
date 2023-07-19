@@ -3,29 +3,17 @@
           box-sizing: border-box;
   min-height: 400px;
   width: 100%;
-  background-image: url(../image/header2.avif);
+  background-image: url(../image/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding: 0 10px; }
+  padding: 0 10px;
+  color: #DDE2E5; }
   .header__flexbox {
-    padding-top: 40px;
-    width: 100%;
+    padding-top: 5vh;
+    width: 70%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-align: center; }
 
 .nav {
@@ -65,10 +53,14 @@
             flex-direction: column;
     font-size: x-large;
     gap: 40px; }
+  .nav__item {
+    border: none;
+    background: none; }
   .nav__link {
     text-decoration: none;
     color: #000;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: x-large; }
     .nav__link:hover {
       color: #4263EB; }
     .nav__link:active {
@@ -107,7 +99,10 @@
     display: block;
     width: 100%;
     height: 30px;
-    top: 10px; }
+    top: 10px;
+    font-size: large;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px; }
     .nav__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -123,13 +118,37 @@
           -ms-flex-align: center;
               align-items: center;
       width: 100%;
-      gap: 0;
-      font-size: xx-large;
-      font-weight: bold; }
+      gap: 0; }
+    .nav__item {
+      border-radius: 10px;
+      padding: 2px 15px;
+      cursor: pointer; }
+      .nav__item :hover {
+        color: #000; }
     .nav__link {
-      font-size: large; }
-    .nav__item_up {
-      display: none; } }
+      font-size: medium;
+      color: #DDE2E5;
+      position: relative; }
+      .nav__link:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        content: "";
+        -webkit-transition: width 0.3s ease-out;
+        transition: width 0.3s ease-out; }
+      .nav__link:hover:after, .nav__link:focus:after {
+        width: 100%; } }
 @media (min-width: 992px) {
   .header {
-    font-size: x-large; } }
+    font-size: x-large;
+    min-height: 500px; }
+    .header__flexbox {
+      padding-top: 7vh; }
+
+  .nav__link {
+    font-size: large; }
+  .nav__item {
+    padding: 2px 30px; } }

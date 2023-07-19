@@ -13,11 +13,12 @@ body {
   line-height: 1.5;
   font-weight: 500;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body[data-open] {
   overflow: hidden; }
 
 h2 {
   text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

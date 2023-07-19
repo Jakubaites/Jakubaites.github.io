@@ -2,28 +2,18 @@
   margin-top: 10px; }
 
 .teacher {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-height: 250px;
   width: 100%;
   padding: 0 20px;
   margin-top: 10px;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   .teacher__text {
     width: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    flex-direction: column;
+    justify-content: center; }
   .teacher__certificate {
     width: 40%;
     position: relative; }
@@ -33,27 +23,21 @@
   .teacher__img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain; }
+    object-fit: contain; }
   .teacher__arrow {
     position: absolute;
     bottom: calc(50% - 5px);
     z-index: 2; }
   .teacher__arrow_left {
     left: 10px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    transform: rotate(90deg); }
   .teacher__arrow_right {
     right: 10px;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
+    transform: rotate(-90deg); }
   .teacher__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
-    -webkit-transition: all 300ms ease;
     transition: all 300ms ease; }
   .teacher__slide {
     min-width: 100%;
@@ -65,3 +49,5 @@
 @media (min-width: 992px) {
   .teacher {
     font-size: x-large; } }
+
+/*# sourceMappingURL=teacher.css.map */
