@@ -2,18 +2,28 @@
   margin-top: 10px; }
 
 .teacher {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 250px;
   width: 100%;
   padding: 0 20px;
   margin-top: 10px;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .teacher__text {
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .teacher__certificate {
     width: 40%;
     position: relative; }
@@ -23,21 +33,37 @@
   .teacher__img {
     width: 100%;
     height: 100%;
-    object-fit: contain; }
+    -o-object-fit: contain;
+       object-fit: contain; }
   .teacher__arrow {
     position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #DDE2E5;
     bottom: calc(50% - 5px);
     z-index: 2; }
   .teacher__arrow_left {
-    left: 10px;
-    transform: rotate(90deg); }
+    left: -10px; }
   .teacher__arrow_right {
-    right: 10px;
-    transform: rotate(-90deg); }
+    right: -10px; }
+  .teacher__arrowSvg {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 9px); }
+    .teacher__arrowSvg_left {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .teacher__arrowSvg_right {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
   .teacher__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
+    -webkit-transition: all 300ms ease;
     transition: all 300ms ease; }
   .teacher__slide {
     min-width: 100%;
@@ -48,6 +74,5 @@
     font-size: large; } }
 @media (min-width: 992px) {
   .teacher {
-    font-size: x-large; } }
-
-/*# sourceMappingURL=teacher.css.map */
+    font-size: x-large;
+    height: 500px; } }

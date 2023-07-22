@@ -31,17 +31,31 @@
     }
     &__arrow {
         position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #DDE2E5;
         bottom: calc(50% - 5px);
         z-index: 2;
     }
     &__arrow_left {
-        left: 10px;
-        transform: rotate(90deg);
+        left: -10px;
     }
     &__arrow_right {
-        right: 10px;
-        transform: rotate(-90deg);
+        right: -10px;
     }
+    &__arrowSvg {
+        position: absolute;
+        top: calc(50% - 5px);
+        left: calc(50% - 9px);
+        &_left {
+          transform: rotate(90deg);
+        }
+        &_right {
+          transform: rotate(-90deg);
+        }
+    }
+   
     &__inner {
         display: flex;
         width: 100%;
@@ -62,5 +76,6 @@
 @media (min-width: 992px) {
     .teacher {
         font-size:x-large;
+        height: 500px;
     }
 }

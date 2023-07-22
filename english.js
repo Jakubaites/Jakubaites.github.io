@@ -9,7 +9,9 @@ function init() {
 function teacherCarousel() {
     let carousel = document.querySelector('.teacher__carousel'),
         arrowLeft = carousel.querySelector('.teacher__arrow_left'),
+        arrowSvgLeft = carousel.querySelector('.teacher__arrowSvg_left'),
         arrowRight = carousel.querySelector('.teacher__arrow_right'),
+        arrowSvgRight = carousel.querySelector('.teacher__arrowSvg_right'),
         inner = carousel.querySelector('.teacher__inner'),
         slides = inner.querySelectorAll('.teacher__slide'),
         widthSlide = slides[0].offsetWidth,
@@ -19,7 +21,7 @@ function teacherCarousel() {
         arrowLeft.style.display = 'none';
 
         carousel.addEventListener('click', (event) => {
-            if(event.target == arrowRight) {
+            if(event.target == arrowRight || event.target == arrowSvgRight) {
             position -= widthSlide;
             inner.style.transform = `translateX(${position}px)`;
             ++counter;
@@ -30,7 +32,7 @@ function teacherCarousel() {
             arrowRight.style.display = 'none';
              } 
             }
-            if(event.target == arrowLeft) {
+            if(event.target == arrowLeft || event.target == arrowSvgLeft) {
             position += widthSlide;
             inner.style.transform = `translateX(${position}px)`;
             --counter;
