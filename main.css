@@ -13,7 +13,8 @@ body {
   line-height: 1.5;
   font-weight: 500;
   width: 100%;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body[data-open] {
   overflow: hidden; }
@@ -21,4 +22,5 @@ body[data-open] {
 h2 {
   text-align: center; }
 
-/*# sourceMappingURL=main.css.map */
+.about {
+  margin-top: 30px; }

@@ -13,16 +13,29 @@
    }
    &__arrow {
       position:absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #DDE2E5;
       top: calc(50% - 5px);
       z-index: 2;
    }
    &__arrow_left {
-       left: 10px;
-       transform: rotate(90deg);
+       left: 0;
    }
     &__arrow_right {
-       right: 10px;
-       transform: rotate(-90deg);
+       right: 0;
+    }
+    &__arrowSvg {
+        position: absolute;
+        top: calc(50% - 5px);
+        left: calc(50% - 9px);
+        &_left {
+          transform: rotate(90deg);
+        }
+        &_right {
+          transform: rotate(-90deg);
+        }
     }
     &__inner {
         display: flex;
@@ -42,11 +55,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
     &__img {
         width: 40%;
         height: 100%;
         object-fit:contain;
+        padding-right: 40px;
     }
 }
 @media (min-width: 576px) {
@@ -57,5 +72,10 @@
 @media (min-width: 992px) {
     .reviews {
       font-size: x-large;
+      height: 400px; 
+      padding: 0 40px;
+      &__text {
+        padding-left: 40px;
+      }
     }
 }

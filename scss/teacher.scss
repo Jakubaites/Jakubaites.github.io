@@ -1,6 +1,4 @@
-.about {
-    margin-top: 10px;
-}
+
 .teacher {
     box-sizing: border-box;
     min-height: 250px;
@@ -14,6 +12,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
     &__certificate {
         width: 40%;
@@ -39,10 +38,10 @@
         z-index: 2;
     }
     &__arrow_left {
-        left: -10px;
+        left: 0;
     }
     &__arrow_right {
-        right: -10px;
+        right: 0;
     }
     &__arrowSvg {
         position: absolute;
@@ -76,6 +75,10 @@
 @media (min-width: 992px) {
     .teacher {
         font-size:x-large;
-        height: 500px;
+        height: 400px; 
+        padding: 0 40px;
+        &__text {
+            padding-left: 40px;
+        }
     }
 }

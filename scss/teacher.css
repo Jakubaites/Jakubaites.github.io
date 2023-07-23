@@ -1,6 +1,3 @@
-.about {
-  margin-top: 10px; }
-
 .teacher {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -44,9 +41,9 @@
     bottom: calc(50% - 5px);
     z-index: 2; }
   .teacher__arrow_left {
-    left: -10px; }
+    left: 0; }
   .teacher__arrow_right {
-    right: -10px; }
+    right: 0; }
   .teacher__arrowSvg {
     position: absolute;
     top: calc(50% - 5px);
@@ -75,4 +72,7 @@
 @media (min-width: 992px) {
   .teacher {
     font-size: x-large;
-    height: 500px; } }
+    height: 400px;
+    padding: 0 40px; }
+    .teacher__text {
+      padding-left: 40px; } }
