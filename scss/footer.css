@@ -5,12 +5,18 @@ footer {
   font-size: 2;
   font-weight: 600;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 5px; }
+  footer a {
+    color: #000;
+    text-decoration: none; }
 
 @media (min-width: 992px) {
   footer {
     font-size: x-large; } }
-
-/*# sourceMappingURL=footer.css.map */
