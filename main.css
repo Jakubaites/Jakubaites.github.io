@@ -6,6 +6,9 @@
 @import url(./scss/teacher.css);
 @import url(./scss/reviews.css);
 @import url(./scss/footer.css);
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #DDE2E5;
   font-family: 'Inter', sans-serif;
