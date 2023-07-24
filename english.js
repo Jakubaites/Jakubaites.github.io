@@ -126,13 +126,14 @@ function up() {
         divUp = document.getElementById('up'),
         heightHeader =  header.offsetHeight; 
         
-    window.addEventListener('scroll', function() {
-    if(window.pageYOffset > heightHeader) { 
-        divUp.style.display = 'block';
-    };
-    if(window.pageYOffset < heightHeader) {
-        divUp.style.display = 'none';
-    };            
-    });
-    
+    if(document.body.offsetWidth > 575) {
+        window.addEventListener('scroll', function() {
+            if(window.pageYOffset > heightHeader) { 
+                divUp.style.display = 'block';
+            };
+            if(window.pageYOffset < heightHeader) {
+                divUp.style.display = 'none';
+            };            
+            });
+    }
 };
