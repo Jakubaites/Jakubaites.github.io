@@ -24,3 +24,22 @@ h2 {
 
 .about {
   margin-top: 30px; }
+
+#up {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+  background-color: #048508;
+  border-radius: 50%;
+  border: 1px solid #000; }
+
+.up__arrow {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 15px);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }

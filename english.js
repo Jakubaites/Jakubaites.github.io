@@ -4,8 +4,8 @@ function init() {
     teacherCarousel();
     reviewsCarousel();
     navbar();
-};
-
+    up();
+}
 function teacherCarousel() {
     let carousel = document.querySelector('.teacher__carousel'),
         arrowLeft = carousel.querySelector('.teacher__arrow_left'),
@@ -119,5 +119,20 @@ function navbar() {
             }
         })
     }
+    
+};
+function up() {
+    let header = document.getElementById('header'),
+        divUp = document.getElementById('up'),
+        heightHeader =  header.offsetHeight; 
+        
+    window.addEventListener('scroll', function() {
+    if(window.pageYOffset > heightHeader) { 
+        divUp.style.display = 'block';
+    };
+    if(window.pageYOffset < heightHeader) {
+        divUp.style.display = 'none';
+    };            
+    });
     
 };
