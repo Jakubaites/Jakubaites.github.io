@@ -6,6 +6,7 @@
 @import './scss/teacher.css';
 @import './scss/reviews.css';
 @import './scss/footer.css';
+
 html {
     scroll-behavior: smooth; 
 }
@@ -44,4 +45,8 @@ h2 {
     top: calc(50% - 10px);
     left:calc(50% - 15px);
     transform: rotate(180deg);
+}
+.link {
+    text-decoration: none;
+    color: #fff;
 }

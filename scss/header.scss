@@ -1,21 +1,46 @@
+$blue: #333C6A;
 .header {
     box-sizing: border-box;
-    min-height: 400px;
     width: 100%;
-    background-image: url(../image/header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+    background-color: #fff;
     position: relative;
-    padding: 0 10px;
-    color:  #DDE2E5;   
-    &__flexbox {
-        padding-top: 5vh; 
-        width: 70%;
+    padding: 0 10px; 
+    &__content {
+        padding-top: 7vh; 
+        width: 100%;
         height: 100%;
-        text-align: center;
+        display: flex;
+        gap: 10px;
+        //align-items:stretch;
     }
-    
+    &__left {
+        flex-basis: 60%;
+        align-self: center;
+        padding: 20px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    &__right {
+        flex-basis: 40%;
+        //align-self: stretch;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &__title {
+        color: $blue;
+    }
+    &__button {
+        color: #fff;
+        background-color: #34BC5A;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 .nav {
     position:fixed;
