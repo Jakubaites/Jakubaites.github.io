@@ -4,33 +4,31 @@ $blue: #333C6A;
     width: 100%;
     background-color: #fff;
     position: relative;
-    padding: 0 10px; 
+    padding: 0; 
     &__content {
-        padding-top: 7vh; 
+        padding-top: 3vh; 
         width: 100%;
         height: 100%;
         display: flex;
         gap: 10px;
-        //align-items:stretch;
     }
     &__left {
         flex-basis: 60%;
         align-self: center;
-        padding: 20px 0;
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        
+        gap: 20px;
+        padding: 0 10px;
     }
     &__right {
         flex-basis: 40%;
-        //align-self: stretch;
+        align-self: stretch;
     }
     &__image {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
     &__title {
         color: $blue;
@@ -38,7 +36,7 @@ $blue: #333C6A;
     &__button {
         color: #fff;
         background-color: #34BC5A;
-        border-radius: 10px;
+        border-radius: 30px;
         cursor: pointer;
     }
 }
