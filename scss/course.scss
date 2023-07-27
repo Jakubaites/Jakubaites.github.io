@@ -11,18 +11,41 @@ $green: #34BC5A;
 }
 
 .card {
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border: 1px solid #DDE2E5;
+    border: 1px solid #fff;
     border-radius: 8px;
     width: 80%;
+    height: 40%;
     position: relative;
     padding-bottom: 10px;
     cursor: pointer;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__image {
+        object-fit:cover;
+        width: 100%;
+        height: 80%;
+        border-radius: 8px 8px 0 0;
+    }
+    &__title {
+        color: $blue;
+    }
+    &__text {
+        list-style: none;
+        list-style-image: url(../image/marker1.png);
+        text-align: start;
+        margin-left: 40px;
+
+    }
+    &__more {
+        align-self:last baseline;
+        margin-right: 10px;
+    }
 }
-.card__title {
+/*.card__title {
     height: 70px;
     padding: 10px;
     display: flex;
@@ -65,7 +88,7 @@ $green: #34BC5A;
         transform: rotate(180deg);
     }
 }
-
+*/
 @media (min-width: 992px)  {
     .course {
         flex-direction: row;
