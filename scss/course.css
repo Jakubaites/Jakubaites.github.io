@@ -1,5 +1,4 @@
 .course {
-  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +12,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center; }
+  text-align: center;
+  background-color: #333C6A;
+  padding: 30px 0; }
 
 .card {
   margin-top: 10px;

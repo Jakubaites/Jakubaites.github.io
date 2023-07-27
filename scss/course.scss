@@ -1,11 +1,15 @@
+$blue: #333C6A;
+$green: #34BC5A;
 .course {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     text-align: center;
+    background-color: $blue;
+    padding: 30px 0;
 }
+
 .card {
     margin-top: 10px;
     background-color: #fff;
