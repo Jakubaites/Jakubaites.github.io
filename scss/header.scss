@@ -1,4 +1,5 @@
 $blue: #333C6A;
+$green: #34BC5A;
 .header {
     box-sizing: border-box;
     width: 100%;
@@ -35,9 +36,11 @@ $blue: #333C6A;
     }
     &__button {
         color: #fff;
-        background-color: #34BC5A;
+        background-color: $green;
         border-radius: 30px;
         cursor: pointer;
+        padding: 5px;
+        font-size: medium;
     }
 }
 .nav {
@@ -46,7 +49,7 @@ $blue: #333C6A;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #DDE2E5;
+    background: #fff;
     z-index: 6;
     transform: translateX(-100vw);
     transition: transform 300ms linear;
@@ -66,14 +69,14 @@ $blue: #333C6A;
     }
     &__link {
         text-decoration: none;
-        color: #000;
+        color: $blue;
         font-weight: 600;
         font-size: x-large;
         &:hover {
-            color: #4263EB;
+            color: $green;
         }
         &:active{
-            color: #7048E8;
+            color: $green;
         }
     }
 }
@@ -98,9 +101,6 @@ $blue: #333C6A;
     .sidebar, .nav__close {
         display: none;
     }
-    .header__flexbox {
-            width: 60%;       
-    }
     .nav {
         transform: translateX(0);
         background: none;
@@ -111,28 +111,26 @@ $blue: #333C6A;
         width: 100%;
         height: 30px;
         font-size: large;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid $blue;
         background: rgba(0, 0, 0, 0);
         backdrop-filter: blur(8px);
         &__list {
             display:flex;
-            flex-direction: row;
-            justify-content:space-evenly;
-            align-items: center;
-            width: 100%;
             gap: 0;
-            
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;            
         }
         &__item {
-            border-radius: 10px;
             cursor: pointer;
             :hover {
-                color: #000; 
+                color: #34BC5A; 
             }
         }
         &__link {
             font-size: medium;
-            color: #DDE2E5;
+            color: $blue;
             position: relative;
             &:after {
                 display: block;
@@ -140,8 +138,7 @@ $blue: #333C6A;
 	            left: 0; 
 	            width: 0;
 	            height: 2px; 
-	            background-color: #000; 
-	            content: "";
+	            background-color: $green;           content: "";
 	            transition: width 0.3s ease-out;
             }
             &:hover:after, &:focus:after {
@@ -153,10 +150,16 @@ $blue: #333C6A;
 @media (min-width: 992px) {
     .header {
       font-size: x-large;
-      min-height: 500px;
       &__flexbox {
         padding-top: 5vh;
        }
+      &__button {
+        font-size:large;
+        padding: 15px;
+      }
+      &__left {
+        gap: 40px;
+      }
     }
     .nav {
         &__link {

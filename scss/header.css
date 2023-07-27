@@ -44,7 +44,9 @@
     color: #fff;
     background-color: #34BC5A;
     border-radius: 30px;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 5px;
+    font-size: medium; }
 
 .nav {
   position: fixed;
@@ -52,7 +54,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #DDE2E5;
+  background: #fff;
   z-index: 6;
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);
@@ -88,13 +90,13 @@
     background: none; }
   .nav__link {
     text-decoration: none;
-    color: #000;
+    color: #333C6A;
     font-weight: 600;
     font-size: x-large; }
     .nav__link:hover {
-      color: #4263EB; }
+      color: #34BC5A; }
     .nav__link:active {
-      color: #7048E8; }
+      color: #34BC5A; }
 
 .nav[data-open] {
   -webkit-transform: translateX(0);
@@ -118,9 +120,6 @@
   .sidebar, .nav__close {
     display: none; }
 
-  .header__flexbox {
-    width: 60%; }
-
   .nav {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -133,7 +132,7 @@
     width: 100%;
     height: 30px;
     font-size: large;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #333C6A;
     background: rgba(0, 0, 0, 0);
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px); }
@@ -141,6 +140,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      gap: 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -151,16 +151,14 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      width: 100%;
-      gap: 0; }
+      width: 100%; }
     .nav__item {
-      border-radius: 10px;
       cursor: pointer; }
       .nav__item :hover {
-        color: #000; }
+        color: #34BC5A; }
     .nav__link {
       font-size: medium;
-      color: #DDE2E5;
+      color: #333C6A;
       position: relative; }
       .nav__link:after {
         display: block;
@@ -168,7 +166,7 @@
         left: 0;
         width: 0;
         height: 2px;
-        background-color: #000;
+        background-color: #34BC5A;
         content: "";
         -webkit-transition: width 0.3s ease-out;
         transition: width 0.3s ease-out; }
@@ -176,10 +174,14 @@
         width: 100%; } }
 @media (min-width: 992px) {
   .header {
-    font-size: x-large;
-    min-height: 500px; }
+    font-size: x-large; }
     .header__flexbox {
       padding-top: 5vh; }
+    .header__button {
+      font-size: large;
+      padding: 15px; }
+    .header__left {
+      gap: 40px; }
 
   .nav__link {
     font-size: large; }
