@@ -41,8 +41,9 @@ $green: #34BC5A;
 
     }
     &__more {
-        align-self:last baseline;
+        align-self: flex-end;
         margin-right: 10px;
+        font-weight:bold;
     }
 }
 /*.card__title {

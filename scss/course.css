@@ -50,9 +50,10 @@
     text-align: start;
     margin-left: 40px; }
   .card__more {
-    -ms-flex-item-align: last baseline;
-        align-self: last baseline;
-    margin-right: 10px; }
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 10px;
+    font-weight: bold; }
 
 /*.card__title {
     height: 70px;
