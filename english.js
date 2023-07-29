@@ -5,6 +5,7 @@ function init() {
     reviewsCarousel();
     navbar();
     up();
+    modalCourse()
 }
 function teacherCarousel() {
     let carousel = document.querySelector('.teacher__carousel'),
@@ -137,3 +138,16 @@ function up() {
             });
     }
 };
+function modalCourse() {
+    let card1 = document.getElementById('card1'),
+        hidden = document.querySelector('.hidden'),
+        close = document.getElementById('hidden-close');
+    card1.addEventListener('click', () =>{
+        hidden.style.display = 'block';
+        document.body.setAttribute('data-open', '');
+        close.addEventListener('click', () => {
+            hidden.style.display = 'none';
+            document.body.removeAttribute('data-open');
+        })
+    })
+}

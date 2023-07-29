@@ -55,6 +55,55 @@
     margin-right: 10px;
     font-weight: bold; }
 
+.hidden {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(196, 196, 196, 0.5);
+  z-index: 6; }
+  .hidden__window {
+    background: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 10px;
+    padding: 40px 10px 10px 10px; }
+  .hidden__title {
+    -ms-flex-item-align: center;
+        align-self: center;
+    color: #333C6A; }
+  .hidden__statistics {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); }
+  .hidden__text {
+    text-align: justify; }
+  .hidden__comment {
+    font-weight: bold; }
+  .hidden__close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer; }
+
 /*.card__title {
     height: 70px;
     padding: 10px;
