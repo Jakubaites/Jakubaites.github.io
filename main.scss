@@ -22,8 +22,6 @@ body {
 }
 body[data-open] {
     overflow: hidden;
-    touch-action: none;
-    -ms-touch-action: none;
 }
 h2 {
     text-align: center;

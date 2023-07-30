@@ -20,9 +20,7 @@ body {
           box-sizing: border-box; }
 
 body[data-open] {
-  overflow: hidden;
-  touch-action: none;
-  -ms-touch-action: none; }
+  overflow: hidden; }
 
 h2 {
   text-align: center; }
