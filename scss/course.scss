@@ -9,7 +9,6 @@ $green: #34BC5A;
     background-color: $blue;
     padding: 30px 0;
 }
-
 .card {
     margin-top: 20px;
     background-color: #fff;
@@ -138,11 +137,43 @@ $green: #34BC5A;
 */
 @media (min-width: 992px)  {
     .course {
-        flex-direction: row;
-        justify-content:space-around;
-        align-items:flex-start; 
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        gap: 10px;
     }
     .card {
-        width: 22%;
+        display:none;
+    }
+    .switch {
+        margin-top: 10px;
+        width:80%;
+        display: flex;
+        justify-content: space-around;
+        &__button {
+            background-color: rgba(0,0,0,0);
+            border:none;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: large;
+        }
+        &__ring {
+            background-color: #fff;
+            color: $blue;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__line {
+            background-color: #fff;
+            transform: rotate(90deg);
+        }
     }
 }
