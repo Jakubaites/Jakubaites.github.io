@@ -1,11 +1,52 @@
 window.onload = init;
 
 function init() {
+    courseCarousel()
     teacherCarousel();
     reviewsCarousel();
     navbar();
     up();
     modalCourse()
+}
+function courseCarousel() {
+    let carousel = document.querySelector('.course__carousel'),
+        arrowLeft = carousel.querySelector('.course__arrow_left'),
+        arrowSvgLeft = carousel.querySelector('.course__arrowSvg_left'),
+        arrowRight = carousel.querySelector('.course__arrow_right'),
+        arrowSvgRight = carousel.querySelector('.course__arrowSvg_right'),
+        inner = carousel.querySelector('.course__inner'),
+        slides = inner.querySelectorAll('.course__slide'),
+        widthSlide = slides[0].offsetWidth,
+        counter = 1,
+        position = 0;
+
+        arrowLeft.style.display = 'none';
+
+        carousel.addEventListener('click', (event) => {
+            if(event.target == arrowRight || event.target == arrowSvgRight) {
+            position -= widthSlide;
+            inner.style.transform = `translateX(${position}px)`;
+            ++counter;
+            if (counter == 2) {
+            arrowLeft.style.display = '';
+            } 
+            if (counter == slides.length) {
+            arrowRight.style.display = 'none';
+             } 
+            }
+            if(event.target == arrowLeft || event.target == arrowSvgLeft) {
+            position += widthSlide;
+            inner.style.transform = `translateX(${position}px)`;
+            --counter;
+            if (counter == 1) {
+             arrowLeft.style.display = 'none';
+            }  
+            if (counter == slides.length - 1) {
+             arrowRight.style.display = '';
+             } 
+            }
+        });
+    
 }
 function teacherCarousel() {
     let carousel = document.querySelector('.teacher__carousel'),
