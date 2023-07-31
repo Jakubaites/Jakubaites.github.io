@@ -22,9 +22,9 @@
     top: calc(50% - 5px);
     z-index: 2; }
   .reviews__arrow_left {
-    left: 0; }
+    left: -10px; }
   .reviews__arrow_right {
-    right: 0; }
+    right: 0px; }
   .reviews__arrowSvg {
     position: absolute;
     top: calc(50% - 5px);
