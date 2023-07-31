@@ -104,50 +104,6 @@
     left: 20px;
     cursor: pointer; }
 
-/*.card__title {
-    height: 70px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.card__summary {
-    list-style: none;
-}
-.card__image {
-    object-fit:cover;
-    width: 100%;
-    height: 80%;
-    border-radius: 8px 8px 0 0;
-}
-.card__button {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.card__content {
-   text-align: left;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-top: 10px;
-   height: 150px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   border-top: 1px solid #DDE2E5;
-   & ul {
-    list-style: none;
-    list-style-image: url(../image/marker1.png);
-    padding-left: 30px;
-   }
-}
-.card[open] {
-    .card__arrow {
-        transform: rotate(180deg);
-    }
-}
-*/
 @media (min-width: 992px) {
   .course {
     -webkit-box-orient: vertical;
@@ -176,7 +132,8 @@
       border-radius: 50%;
       border: 1px solid #34BC5A;
       background-color: #34BC5A;
-      top: calc(50% - 25px); }
+      top: calc(50% - 25px);
+      z-index: 2; }
     .course__arrow_left {
       left: -25px; }
     .course__arrow_right {
@@ -279,6 +236,10 @@
               flex-direction: column;
       gap: 10px;
       font-size: large; }
+      .switch__button:hover {
+        color: #34BC5A; }
+        .switch__button:hover .switch__ring {
+          background-color: #34BC5A; }
     .switch__ring {
       background-color: #fff;
       color: #333C6A;
