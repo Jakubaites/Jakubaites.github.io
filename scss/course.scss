@@ -9,6 +9,9 @@ $green: #34BC5A;
     background-color: $blue;
     padding: 30px 0;
 }
+.switch, .course__wrap {
+    display: none;
+}
 .card {
     margin-top: 20px;
     background-color: #fff;
@@ -101,6 +104,7 @@ $green: #34BC5A;
         &__wrap {
             position: relative;
             width: calc(80% + 50px);
+            display: block;
         }
         &__carousel {
             overflow: hidden;

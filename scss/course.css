@@ -16,6 +16,9 @@
   background-color: #333C6A;
   padding: 30px 0; }
 
+.switch, .course__wrap {
+  display: none; }
+
 .card {
   margin-top: 20px;
   background-color: #fff;
@@ -118,7 +121,8 @@
     gap: 20px; }
     .course__wrap {
       position: relative;
-      width: calc(80% + 50px); }
+      width: calc(80% + 50px);
+      display: block; }
     .course__carousel {
       overflow: hidden;
       width: 100%;

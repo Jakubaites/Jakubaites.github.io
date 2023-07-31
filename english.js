@@ -16,13 +16,31 @@ function courseCarousel() {
         arrowSvgRight = carousel.querySelector('.course__arrowSvg_right'),
         inner = carousel.querySelector('.course__inner'),
         slides = inner.querySelectorAll('.course__slide'),
+        buttons = document.querySelectorAll('.switch__button');
         widthSlide = slides[0].offsetWidth,
         counter = 1,
         position = 0;
-
         arrowLeft.style.display = 'none';
 
-        carousel.addEventListener('click', (event) => {
+        for (let i = 0; i < buttons.length;i++) { // switch buttons
+            buttons[i].addEventListener('click',() => {
+                position = -(widthSlide * i);
+                counter = i + 1;
+                inner.style.transform = `translateX(${position}px)`;
+                if(counter == 1) {
+                    arrowLeft.style.display = 'none';
+                    arrowRight.style.display = '';
+                } else if(counter == 2 || counter == 3) {
+                    arrowLeft.style.display = '';
+                    arrowRight.style.display = '';
+                } else if(counter == 4) {
+                    arrowLeft.style.display = '';
+                    arrowRight.style.display = 'none';
+                }
+             }) 
+        }
+
+        carousel.addEventListener('click', (event) => { // arrow
             if(event.target == arrowRight || event.target == arrowSvgRight) {
             position -= widthSlide;
             inner.style.transform = `translateX(${position}px)`;
