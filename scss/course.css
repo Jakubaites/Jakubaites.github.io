@@ -107,6 +107,18 @@
     left: 20px;
     cursor: pointer; }
 
+#hidden-card1 {
+  display: none; }
+
+#hidden-card2 {
+  display: none; }
+
+#hidden-card3 {
+  display: none; }
+
+#hidden-card4 {
+  display: none; }
+
 @media (min-width: 992px) {
   .course {
     -webkit-box-orient: vertical;
