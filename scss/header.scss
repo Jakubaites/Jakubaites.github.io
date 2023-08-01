@@ -7,7 +7,6 @@ $green: #34BC5A;
     position: relative;
     padding: 0; 
     &__content {
-        padding-top: 3vh; 
         width: 100%;
         height: 100%;
         display: flex;
@@ -20,7 +19,7 @@ $green: #34BC5A;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 0 10px;
+        padding: 3vh 15px;
     }
     &__right {
         flex-basis: 40%;
@@ -97,7 +96,22 @@ $green: #34BC5A;
     left: 20px;
     cursor: pointer;
 }
+@media (min-width: 450px) {
+    .header {
+        height: 400px;
+    }
+}
 @media (min-width: 576px) {
+    .header {
+        height: 500px;
+        &__content {
+            width: 100%;
+            height: 100%;
+            margin-top: -53px;
+            display: flex;
+            gap: 10px;
+        }
+    }
     .sidebar, .nav__close {
         display: none;
     }
@@ -149,6 +163,7 @@ $green: #34BC5A;
 }
 @media (min-width: 992px) {
     .header {
+        height: 600px;
       font-size: x-large;
       &__flexbox {
         padding-top: 5vh;
@@ -168,5 +183,11 @@ $green: #34BC5A;
         &__item {
             padding: 2px 30px;
         }
+    }
+}
+@media (min-width: 1400px) {
+    .header {
+      height: 700px;
+      font-size: xx-large;
     }
 }
