@@ -4,6 +4,10 @@ $green: #34BC5A;
     box-sizing: border-box;
     width: 100%;
     background-color: #fff;
+    background-image: url("../image/headerS.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     position: relative;
     padding: 0; 
     &__content {
@@ -19,17 +23,9 @@ $green: #34BC5A;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 3vh 15px;
+        padding: 5vh 15px;
     }
-    &__right {
-        flex-basis: 40%;
-        align-self: stretch;
-    }
-    &__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+   
     &__title {
         color: $blue;
     }
@@ -159,6 +155,11 @@ $green: #34BC5A;
                 width: 100%;
             }
         }
+    }
+}
+@media (min-width: 700px) {
+    .header {
+        background-image: url("../image/header.png");
     }
 }
 @media (min-width: 992px) {
