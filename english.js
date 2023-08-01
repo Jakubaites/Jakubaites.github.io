@@ -198,8 +198,7 @@ function up() {
     }
 };
 function modalCourse() {
-    let bodyWrap = document.querySelector('.wrapperBody'),
-        card1 = document.getElementById('card1'),
+    let card1 = document.getElementById('card1'),
         card2 = document.getElementById('card2'),
         card3 = document.getElementById('card3'),
         card4 = document.getElementById('card4'),
@@ -212,43 +211,41 @@ function modalCourse() {
     card1.addEventListener('click', () =>{
         hidden.style.display = 'block';
         hiddenCard1.style.display = 'block';
-        bodyWrap.setAttribute('data-open', '');
+        document.body.setAttribute('data-open', '');
         close.addEventListener('click', () => {
             hidden.style.display = 'none';
             hiddenCard1.style.display = 'none';
-            bodyWrap.removeAttribute('data-open');
+            document.body.removeAttribute('data-open');
         })
     })
     card2.addEventListener('click', () =>{
         hidden.style.display = 'block';
         hiddenCard2.style.display = 'block';
-        bodyWrap.setAttribute('data-open', '');
         document.body.setAttribute('data-open', '');
         close.addEventListener('click', () => {
             hidden.style.display = 'none';
             hiddenCard2.style.display = 'none';
-            bodyWrap.removeAttribute('data-open');
             document.body.removeAttribute('data-open');
         })
     })
     card3.addEventListener('click', () =>{
         hidden.style.display = 'block';
         hiddenCard3.style.display = 'block';
-        bodyWrap.setAttribute('data-open', '');
+        document.body.setAttribute('data-open', '');
         close.addEventListener('click', () => {
             hidden.style.display = 'none';
             hiddenCard3.style.display = 'none';
-            bodyWrap.removeAttribute('data-open');
+            document.body.removeAttribute('data-open');
         })
     })
     card4.addEventListener('click', () =>{
         hidden.style.display = 'block';
         hiddenCard4.style.display = 'block';
-        bodyWrap.setAttribute('data-open', '');
+        document.body.setAttribute('data-open', '');
         close.addEventListener('click', () => {
             hidden.style.display = 'none';
             hiddenCard4.style.display = 'none';
-            bodyWrap.removeAttribute('data-open');
+            document.body.removeAttribute('data-open');
         })
     })
 }

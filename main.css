@@ -24,9 +24,6 @@ body[data-open] {
   -ms-touch-action: none;
   overflow: hidden; }
 
-.wrapperBody[data-open] {
-  overflow: hidden; }
-
 h2 {
   text-align: center; }
 
