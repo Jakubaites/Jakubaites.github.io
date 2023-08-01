@@ -20,6 +20,11 @@ body {
           box-sizing: border-box; }
 
 body[data-open] {
+  touch-action: none;
+  -ms-touch-action: none;
+  overflow: hidden; }
+
+.wrapperBody[data-open] {
   overflow: hidden; }
 
 h2 {
