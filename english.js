@@ -9,47 +9,72 @@ function init() {
     modalCourse()
 }
 function courseCarousel() {
-    let carousel = document.querySelector('.course__carousel'),
+    let carousel = document.querySelector('.course__wrap'),
         arrowLeft = carousel.querySelector('.course__arrow_left'),
         arrowSvgLeft = carousel.querySelector('.course__arrowSvg_left'),
         arrowRight = carousel.querySelector('.course__arrow_right'),
         arrowSvgRight = carousel.querySelector('.course__arrowSvg_right'),
         inner = carousel.querySelector('.course__inner'),
         slides = inner.querySelectorAll('.course__slide'),
-        buttons = document.querySelectorAll('.switch__button');
+        buttons = document.querySelectorAll('.switch__button'),
+        buttonRings = document.querySelectorAll('.switch__ring');
         widthSlide = slides[0].offsetWidth,
         counter = 1,
         position = 0;
         arrowLeft.style.display = 'none';
+        buttons[0].style.color = '#34BC5A';
+        buttonRings[0].style.backgroundColor = '#34BC5A';
 
         for (let i = 0; i < buttons.length;i++) { // switch buttons
             buttons[i].addEventListener('click',() => {
                 position = -(widthSlide * i);
                 counter = i + 1;
                 inner.style.transform = `translateX(${position}px)`;
+                for(let i = 0; i < buttons.length;i++) {
+                    buttons[i].style.color = '';
+                    buttonRings[i].style.backgroundColor = '';
+                }
                 if(counter == 1) {
                     arrowLeft.style.display = 'none';
                     arrowRight.style.display = '';
+                    buttons[i].style.color = '#34BC5A';
+                    buttonRings[i].style.backgroundColor = '#34BC5A';
                 } else if(counter == 2 || counter == 3) {
                     arrowLeft.style.display = '';
                     arrowRight.style.display = '';
+                    buttons[i].style.color = '#34BC5A';
+                    buttonRings[i].style.backgroundColor = '#34BC5A';
                 } else if(counter == 4) {
                     arrowLeft.style.display = '';
                     arrowRight.style.display = 'none';
+                    buttons[i].style.color = '#34BC5A';
+                    buttonRings[i].style.backgroundColor = '#34BC5A';
                 }
              }) 
         }
 
         carousel.addEventListener('click', (event) => { // arrow
+            for(let i = 0; i < buttons.length;i++) {
+                buttons[i].style.color = '';
+                buttonRings[i].style.backgroundColor = '';
+            }
             if(event.target == arrowRight || event.target == arrowSvgRight) {
             position -= widthSlide;
             inner.style.transform = `translateX(${position}px)`;
             ++counter;
             if (counter == 2) {
             arrowLeft.style.display = '';
+            buttons[1].style.color = '#34BC5A';
+            buttonRings[1].style.backgroundColor = '#34BC5A';
             } 
+            if (counter == 3) {
+                buttons[2].style.color = '#34BC5A';
+                buttonRings[2].style.backgroundColor = '#34BC5A';
+                } 
             if (counter == slides.length) {
-            arrowRight.style.display = 'none';
+                arrowRight.style.display = 'none';
+                buttons[3].style.color = '#34BC5A';
+                buttonRings[3].style.backgroundColor = '#34BC5A';
              } 
             }
             if(event.target == arrowLeft || event.target == arrowSvgLeft) {
@@ -57,10 +82,18 @@ function courseCarousel() {
             inner.style.transform = `translateX(${position}px)`;
             --counter;
             if (counter == 1) {
-             arrowLeft.style.display = 'none';
-            }  
+                arrowLeft.style.display = 'none';
+                buttons[0].style.color = '#34BC5A';
+                buttonRings[0].style.backgroundColor = '#34BC5A';
+            } 
+            if (counter == 2) {
+                buttons[1].style.color = '#34BC5A';
+                buttonRings[1].style.backgroundColor = '#34BC5A';
+                } 
             if (counter == slides.length - 1) {
-             arrowRight.style.display = '';
+                arrowRight.style.display = '';
+                buttons[2].style.color = '#34BC5A';
+                buttonRings[2].style.backgroundColor = '#34BC5A';
              } 
             }
         });
