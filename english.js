@@ -12,8 +12,10 @@ function courseCarousel() {
     let carousel = document.querySelector('.course__wrap'),
         arrowLeft = carousel.querySelector('.course__arrow_left'),
         arrowSvgLeft = carousel.querySelector('.course__arrowSvg_left'),
+        arrowUseLeft = document.getElementById('useArrowLeft'),
         arrowRight = carousel.querySelector('.course__arrow_right'),
         arrowSvgRight = carousel.querySelector('.course__arrowSvg_right'),
+        arrowUseRight = document.getElementById('useArrowRight'),
         inner = carousel.querySelector('.course__inner'),
         slides = inner.querySelectorAll('.course__slide'),
         buttons = document.querySelectorAll('.switch__button'),
@@ -58,7 +60,7 @@ function courseCarousel() {
                 buttons[i].style.color = '';
                 buttonRings[i].style.backgroundColor = '';
             }
-            if(event.target == arrowRight || event.target == arrowSvgRight) {
+            if(event.target == arrowRight || event.target == arrowSvgRight || event.target == arrowUseRight) {
             position -= widthSlide;
             inner.style.transform = `translateX(${position}px)`;
             ++counter;
@@ -77,7 +79,7 @@ function courseCarousel() {
                 buttonRings[3].style.backgroundColor = '#34BC5A';
              } 
             }
-            if(event.target == arrowLeft || event.target == arrowSvgLeft) {
+            if(event.target == arrowLeft || event.target == arrowSvgLeft || event.target == arrowUseLeft) {
             position += widthSlide;
             inner.style.transform = `translateX(${position}px)`;
             --counter;
