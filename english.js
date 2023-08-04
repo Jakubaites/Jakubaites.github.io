@@ -2,7 +2,6 @@ window.onload = init;
 
 function init() {
     courseCarousel()
-    teacherCarousel();
     reviewsCarousel();
     navbar();
     up();
@@ -56,10 +55,13 @@ function courseCarousel() {
         }
 
         carousel.addEventListener('click', (event) => { // arrow
-            for(let i = 0; i < buttons.length;i++) {
-                buttons[i].style.color = '';
-                buttonRings[i].style.backgroundColor = '';
-            }
+            if(event.target == arrowRight || event.target == arrowSvgRight || event.target == arrowUseRight ||
+               event.target == arrowLeft || event.target == arrowSvgLeft || event.target == arrowUseLeft) {
+                for(let i = 0; i < buttons.length;i++) {
+                    buttons[i].style.color = '';
+                    buttonRings[i].style.backgroundColor = '';
+                }
+               }
             if(event.target == arrowRight || event.target == arrowSvgRight || event.target == arrowUseRight) {
             position -= widthSlide;
             inner.style.transform = `translateX(${position}px)`;

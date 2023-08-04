@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #DDE2E5;
+  background-color: #fff;
   font-family: 'Inter', sans-serif;
   font-size: medium;
   line-height: 1.5;
@@ -28,12 +28,14 @@ h2 {
   text-align: center; }
 
 .about {
-  border: 1px solid #fff;
+  border: 1px solid #333C6A;
+  color: #333C6A;
   border-radius: 30px;
   width: 60%;
   padding: 0 5px; }
   .about_white {
-    color: #fff; }
+    color: #fff;
+    border: 1px solid #fff; }
 
 #up {
   display: none;
