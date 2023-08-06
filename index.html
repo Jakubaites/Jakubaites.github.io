@@ -283,7 +283,7 @@
   <p class="teacher__performance">Привет! Меня зовут Александра и я знаю как 
     пробудить у ребенка интерес к изучению английского!</p>
   <div class="teacher__photo">
-    <img class="teacher__photoImg" src='image/teacherphoto.jpg' alt="reviews">
+    <img class="teacher__photoImg" src='image/teacherphoto.jpg' alt="teacher Photo">
   </div>
   <div class="teacher__statistic">
     <div class="teacher__experience"><div class="teacher__bold">> 10 лет</div> опыт преподавания</div>
@@ -292,11 +292,33 @@
   </div>
   <div class="teacher__certificate"> 
     <div class="teacher__carousel">
+      <div class="teacher__arrow teacher__arrow_left">
+        <svg class='teacher__arrowSvg teacher__arrowSvg_left' width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use id='useTeacherLeft' href="scss/sprite.svg#arrow"></use>
+        </svg>
+       </div>
+       <div class="teacher__arrow teacher__arrow_right">
+        <svg class='teacher__arrowSvg teacher__arrowSvg_right' width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use id='useTeacherRight'href="scss/sprite.svg#arrow"></use>
+       </svg>
+       </div>
+      <div class="teacher__inner">
+        <div class='teacher__slide'>
       <div class="teacher__window">
-
+        <img class="teacher__certificateImg" src='image/teacher1.jpg' alt="teacher certificate #1">
       </div>
-      <div class="teacher__certificateName">
-
+      <p class="teacher__certificateName">
+         Диплом о высшем образовании
+      </p>
+      </div>
+      <div class='teacher__slide'>
+        <div class="teacher__window">
+          <img class="teacher__certificateImg" src='image/teacher2.jpg' alt="teacher certificate #2">
+        </div>
+        <p class="teacher__certificateName">
+           Диплом о втором высшем
+        </p>
+      </div>
       </div>
     </div>
   </div>

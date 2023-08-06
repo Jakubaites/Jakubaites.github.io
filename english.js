@@ -1,7 +1,8 @@
 window.onload = init;
 
 function init() {
-    courseCarousel()
+    courseCarousel();
+    teacherCarousel();
     reviewsCarousel();
     navbar();
     up();

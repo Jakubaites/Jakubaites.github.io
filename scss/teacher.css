@@ -5,17 +5,20 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 10px;
   row-gap: 30px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "title title" "photo performance" "statistic statistic"  "certificate certificate"; }
+  grid-template-areas: "title title" "performance photo" "statistic statistic"  "certificate certificate"; }
   .teacher__title {
     grid-area: title; }
   .teacher__photo {
     grid-area: photo;
-    border: 1px solid #fff;
-    border-radius: 30px; }
+    border: 1px solid #333C6A;
+    border-radius: 30px;
+    height: 100%; }
   .teacher__photoImg {
     width: 100%;
     height: 100%;
@@ -23,8 +26,70 @@
        object-fit: cover;
     border-radius: 30px; }
   .teacher__performance {
-    grid-area: performance; }
+    grid-area: performance;
+    text-align: center; }
   .teacher__statistic {
     grid-area: statistic; }
+  .teacher__bold {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #333C6A; }
   .teacher__certificate {
-    grid-area: certificate; }
+    grid-area: certificate;
+    position: relative;
+    width: 80%;
+    display: block; }
+  .teacher__carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #fff; }
+  .teacher__arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #34BC5A;
+    background-color: #34BC5A;
+    top: calc(50% - 25px);
+    z-index: 2; }
+  .teacher__arrow_left {
+    left: -25px; }
+  .teacher__arrow_right {
+    right: -25px; }
+  .teacher__arrowSvg {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 9px); }
+    .teacher__arrowSvg_left {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .teacher__arrowSvg_right {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+  .teacher__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease; }
+  .teacher__slide {
+    min-width: 100%;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .teacher__certificateImg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .teacher__certificateName {
+    margin-top: 10px; }
