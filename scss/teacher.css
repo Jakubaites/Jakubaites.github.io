@@ -39,6 +39,8 @@
     position: relative;
     width: 80%;
     display: block; }
+  .teacher__certificateImg {
+    border-radius: 30px; }
   .teacher__carousel {
     overflow: hidden;
     width: 100%;
@@ -93,3 +95,24 @@
        object-fit: cover; }
   .teacher__certificateName {
     margin-top: 10px; }
+
+@media (min-width: 992px) {
+  .teacher {
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 30px 30px;
+    row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title title title" "performance performance performance" "photo statistic certificate";
+    font-size: x-large; }
+    .teacher__title {
+      font-size: x-large; }
+    .teacher__performance {
+      width: 50%; }
+    .teacher__bold {
+      font-size: 70px; } }

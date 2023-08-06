@@ -47,6 +47,9 @@ $green: #34BC5A;
         width: 80%;
         display: block;
     }
+    &__certificateImg {
+        border-radius: 30px;
+    }
     &__carousel {
         overflow: hidden;
         width: 100%;
@@ -103,5 +106,30 @@ $green: #34BC5A;
     }
     &__certificateName {
         margin-top: 10px;
+    }
+}
+@media (min-width: 992px) {
+    .teacher {
+        display: grid;
+        justify-items: center;
+        align-items: center; 
+        text-align: center;
+        padding: 30px 30px;
+        row-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "title title title"
+                             "performance performance performance"
+                             "photo statistic certificate";
+        font-size:x-large;
+        &__title {
+            font-size:x-large;
+        }
+        &__performance {
+            width: 50%;
+        }
+        &__bold {
+            font-size: 70px;
+        }
     }
 }
