@@ -145,7 +145,7 @@ function teacherCarousel() {
     
 }
 function reviewsCarousel() {
-    let carousel = document.querySelector('.reviews__carousel'),
+    let carousel = document.querySelector('.reviews__wrap'),
         arrowLeft = carousel.querySelector('.reviews__arrow_left'),
         arrowSvgLeft = carousel.querySelector('.reviews__arrowSvg_left'),
         arrowRight = carousel.querySelector('.reviews__arrow_right'),
