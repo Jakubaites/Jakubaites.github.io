@@ -69,8 +69,41 @@ $green: #34BC5A;
 &__name {
   color: $blue;
   font-size: large;
+  font-weight: bold;
 }
 &__img {
   border-radius: 50%;
 }
+}
+@media (min-width: 576px) {
+  .reviews {
+    &__slide {
+    width: 80%;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+    text-align: center;
+    padding: 30px 30px;
+    row-gap: 30px;
+    column-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "name ."
+                         "photo text";
+    }
+    &__name {
+        grid-area: name;
+        text-align: start;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    &__img {
+        grid-area: photo;
+    }
+    &__text {
+        grid-area: text;
+        color:$blue;
+        font-size: x-large;
+    }
+  }
 }
