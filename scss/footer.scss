@@ -1,20 +1,59 @@
-footer {
-    margin-top: 10px;
-    background-color: #fff;
-    text-align: center;
-    font-size: 2;
-    font-weight: 600;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-    a {
-      color: #000;
-       text-decoration: none;
-    }
-}
-@media (min-width: 992px) {
-    footer {
-      font-size: x-large;
-    }
+$blue: #333C6A;
+$green: #34BC5A;
+.footer {
+  display: grid;
+  justify-items: center;
+  align-items: center; 
+  text-align: center;
+  padding: 30px 10px;
+  row-gap: 20px;
+  column-gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "about about about"
+                       "number number number"
+                       "telegram whatsapp viber"
+                       "mail mail mail" 
+                       "address address address"; 
+  &__about {
+    grid-area: about;
+  }
+  &__number {
+    grid-area: number;
+    font-size: x-large;
+  }
+  &__telegram {
+    grid-area: telegram;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+  &__whatsapp {
+    grid-area: whatsapp;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+  &__viber {
+    grid-area: viber;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+  &__mail {
+    grid-area: mail;
+    font-size: large;
+  }
+  &__address {
+    grid-area: address;
+    font-size: large;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  a, p {
+    text-decoration: none;
+    color: $blue;
+  }
 }

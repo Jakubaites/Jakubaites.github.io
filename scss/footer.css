@@ -1,22 +1,61 @@
-footer {
-  margin-top: 10px;
-  background-color: #fff;
+.footer {
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  font-size: 2;
-  font-weight: 600;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 5px; }
-  footer a {
-    color: #000;
-    text-decoration: none; }
-
-@media (min-width: 992px) {
-  footer {
-    font-size: x-large; } }
+  padding: 30px 10px;
+  row-gap: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "about about about" "number number number" "telegram whatsapp viber" "mail mail mail"  "address address address"; }
+  .footer__about {
+    grid-area: about; }
+  .footer__number {
+    grid-area: number;
+    font-size: x-large; }
+  .footer__telegram {
+    grid-area: telegram;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .footer__whatsapp {
+    grid-area: whatsapp;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .footer__viber {
+    grid-area: viber;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .footer__mail {
+    grid-area: mail;
+    font-size: large; }
+  .footer__address {
+    grid-area: address;
+    font-size: large; }
+  .footer img {
+    width: 50%;
+    height: 50%; }
+  .footer a, .footer p {
+    text-decoration: none;
+    color: #333C6A; }
