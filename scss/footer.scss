@@ -56,4 +56,36 @@ $green: #34BC5A;
     text-decoration: none;
     color: $blue;
   }
+  &__qrcode {
+    display: none;
+  }
+}
+@media (min-width: 615px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr) 2fr 3fr;
+    grid-template-rows: repeat(3 auto);
+    grid-template-areas: "about about about about about"
+                         "number number number . mail"
+                         "telegram whatsapp viber . address";
+    padding: 30px 30px;
+    &__qrcode {
+      display: block;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+      grid-column-start: 4;
+      grid-column-end: span 1;
+    }
+    &__hidden {
+      display: none;
+    }
+    &__number {
+      font-size: xx-large;
+    }
+    &__mail {
+      font-size: xx-large;
+    }
+    &__address {
+      font-size: xx-large;
+    }
+  }
 }

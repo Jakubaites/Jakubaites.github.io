@@ -13,9 +13,10 @@
     
     <a href='#header'>
      <div id="up">
-      <svg class='up__arrow' width="30" height="20" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class='up__arrow' width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use href="scss/sprite.svg#arrow"></use>
       </svg>
+      <p class='up__text'>Вверх</p>
      </div>
     </a>
     <header class="header" id="header">
@@ -364,6 +365,9 @@
 <footer class="footer" id="contacts">
   <h2 class="about footer__about">Контакты</h2>
   <a class="footer__number" href="tel:+79215508120">+7(921) 550-81-20</a> 
+  <div class='footer__qrcode'>
+    <img class="footer__qrcodeImg" src='image/qrcode.png' alt="QR код">
+  </div>
   <a class="footer__telegram" href="https://t.me/anisimovki">
   <img class="footer__telegramImg" src='image/telegram-svgrepo-com.svg' alt="Иконка telegram"></a>
   <a class="footer__whatsapp" href="https://wa.me/79215508120">
@@ -371,7 +375,7 @@
   <a class="footer__viber" href="viber://chat?number=%2B79215508120">
   <img class="footer__viberImg" src='image/viber-icon-logo-svgrepo-com.svg' alt="Иконка viber"></a>
   <a class="footer__mail" href="mailto:anisimov.const@gmail.com">anisimov.const@gmail.com</a>
-  <p class="footer__address">г.Новокуйбышевск<br>ул.Островского</p>
+  <p class="footer__address">г.Новокуйбышевск<br><span class='footer__hidden'>ул.Островского</span></p>
   
 </footer>
 

@@ -42,19 +42,25 @@ h2 {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   z-index: 5;
-  background-color: #048508;
+  background-color: #34BC5A;
   border-radius: 50%;
-  border: 1px solid #000; }
+  border: 1px solid #34BC5A; }
 
 .up__arrow {
   position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  left: calc(50% - 9px);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
+
+.up__text {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 22px);
+  color: #000; }
 
 .link {
   text-decoration: none;

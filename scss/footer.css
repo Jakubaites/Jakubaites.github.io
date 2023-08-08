@@ -59,3 +59,26 @@
   .footer a, .footer p {
     text-decoration: none;
     color: #333C6A; }
+  .footer__qrcode {
+    display: none; }
+
+@media (min-width: 615px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr) 2fr 3fr;
+    grid-template-rows: repeat(3 auto);
+    grid-template-areas: "about about about about about" "number number number . mail" "telegram whatsapp viber . address";
+    padding: 30px 30px; }
+    .footer__qrcode {
+      display: block;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+      grid-column-start: 4;
+      grid-column-end: span 1; }
+    .footer__hidden {
+      display: none; }
+    .footer__number {
+      font-size: xx-large; }
+    .footer__mail {
+      font-size: xx-large; }
+    .footer__address {
+      font-size: xx-large; } }
