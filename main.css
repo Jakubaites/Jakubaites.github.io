@@ -40,10 +40,10 @@ h2 {
 #up {
   display: none;
   position: fixed;
-  right: 30px;
+  right: 40px;
   bottom: 30px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   z-index: 5;
   background-color: #34BC5A;
   border-radius: 50%;

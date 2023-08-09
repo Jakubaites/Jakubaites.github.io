@@ -79,6 +79,32 @@ $green: #34BC5A;
       display: none;
     }
     &__number {
+      font-size: large;
+    }
+    &__mail {
+      font-size: large;
+    }
+    &__address {
+      font-size: large;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+     &__number {
+      font-size: x-large;
+    }
+    &__mail {
+      font-size: x-large;
+    }
+    &__address {
+      font-size: x-large;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+     &__number {
       font-size: xx-large;
     }
     &__mail {

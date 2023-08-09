@@ -77,8 +77,22 @@
     .footer__hidden {
       display: none; }
     .footer__number {
-      font-size: xx-large; }
+      font-size: large; }
     .footer__mail {
-      font-size: xx-large; }
+      font-size: large; }
     .footer__address {
-      font-size: xx-large; } }
+      font-size: large; } }
+@media (min-width: 992px) {
+  .footer__number {
+    font-size: x-large; }
+  .footer__mail {
+    font-size: x-large; }
+  .footer__address {
+    font-size: x-large; } }
+@media (min-width: 1200px) {
+  .footer__number {
+    font-size: xx-large; }
+  .footer__mail {
+    font-size: xx-large; }
+  .footer__address {
+    font-size: xx-large; } }
